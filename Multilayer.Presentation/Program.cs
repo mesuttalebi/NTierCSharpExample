@@ -19,8 +19,9 @@ namespace MultiLayer.Presentation
         static void Main(string[] args)
         {
             IKernel kernel = new StandardKernel();
+            kernel.Load<MultiLayer.Services.DIModule>();
             kernel.Bind<IBlogService>().To<BlogService>();
-            kernel.Bind<IBlog>().To<BlogRepository>();
+            
 
             IBlogService blogService = kernel.Get<IBlogService>();
 
