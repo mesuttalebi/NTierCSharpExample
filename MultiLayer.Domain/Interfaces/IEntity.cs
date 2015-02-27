@@ -10,12 +10,12 @@ namespace MultiLayer.Domain.Interfaces
     {
         IQueryable<T> GelAll { get; }
 
-        T GetById<TKey>(TKey Id);
+        T GetById(object Id);
 
         bool INSERT(T Entity);
 
-        bool Update<TKey>(TKey Id, T Entity);
+        bool Update(object Id, T Entity);
 
-        bool Delete<TKey>(TKey Id);
+        bool Delete(object Id);
     }
 }

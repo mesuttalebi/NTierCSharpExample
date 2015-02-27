@@ -16,7 +16,7 @@ namespace MultiLayer.Infrasturcture.Repositories
             get { throw new NotImplementedException(); }
         }
 
-        public Domain.Entities.Blog GetById<TKey>(TKey Id)
+        public Domain.Entities.Blog GetById(object Id)
         {
             throw new NotImplementedException();
         }
@@ -30,12 +30,12 @@ namespace MultiLayer.Infrasturcture.Repositories
             }
         }
 
-        public bool Update<TKey>(TKey Id, Domain.Entities.Blog Entity)
+        public bool Update(object Id, Domain.Entities.Blog Entity)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete<TKey>(TKey Id)
+        public bool Delete(object Id)
         {
             throw new NotImplementedException();
         }
