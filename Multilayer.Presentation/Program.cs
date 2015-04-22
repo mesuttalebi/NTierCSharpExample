@@ -1,16 +1,6 @@
-﻿using MultiLayer.Services.BlogServices;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MultiLayer.Presentation.Controllers;
+using MultiLayer.Services.BlogServices;
 using Ninject;
-using Ninject.Modules;
-using System.Reflection;
-using MultiLayer.Domain.Entities;
-using MultiLayer.Presentation.Controllers;
-using MultiLayer.Domain.Interfaces;
-using MultiLayer.Infrasturcture.Repositories;
 
 namespace MultiLayer.Presentation
 {
@@ -19,7 +9,7 @@ namespace MultiLayer.Presentation
         static void Main(string[] args)
         {
             IKernel kernel = new StandardKernel();
-            kernel.Load<MultiLayer.Services.DIModule>();
+            kernel.Load<Services.DIModule>();
             kernel.Bind<IBlogService>().To<BlogService>();
             
 

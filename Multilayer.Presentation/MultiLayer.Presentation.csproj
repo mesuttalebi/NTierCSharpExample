@@ -67,10 +67,6 @@
       <Project>{0777825c-e041-4379-99f7-6a6358d57f5f}</Project>
       <Name>MultiLayer.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MultiLayer.Infrasturcture\MultiLayer.Infrasturcture.csproj">
-      <Project>{0b11311d-e180-4ffe-beb7-f09a59251d9f}</Project>
-      <Name>MultiLayer.Infrasturcture</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MultiLayer.Services\MultiLayer.Services.csproj">
       <Project>{1d3d6e42-6dcd-4628-8556-8e9c15afbe73}</Project>
       <Name>MultiLayer.Services</Name>
