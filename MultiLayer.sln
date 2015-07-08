@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{812578
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiLayer.Presentation3", "MultiLayer.Presentation\MultiLayer.Presentation3.csproj", "{003DEE10-0D37-4942-AE8E-9B3636E1F3D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiLayer.Presentation", "MultiLayer.Presentation\MultiLayer.Presentation.csproj", "{003DEE10-0D37-4942-AE8E-9B3636E1F3D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
