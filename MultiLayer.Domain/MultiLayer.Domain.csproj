@@ -42,10 +42,7 @@
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\Blog.cs" />
     <Compile Include="Entities\Post.cs" />
-    <Compile Include="Interfaces\IAuthor.cs" />
-    <Compile Include="Interfaces\IBlog.cs" />
-    <Compile Include="Interfaces\IEntity.cs" />
-    <Compile Include="Interfaces\IPost.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

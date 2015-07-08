@@ -1,11 +1,7 @@
-﻿using MultiLayer.Domain.Interfaces;
+﻿using MultiLayer.Domain.Entities;
+using MultiLayer.Domain.Interfaces;
 using MultiLayer.Infrasturcture.Repositories;
 using Ninject.Modules;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MultiLayer.Services
 {
@@ -13,7 +9,7 @@ namespace MultiLayer.Services
     {
         public override void Load()
         {
-            Bind<IBlog>().To<BlogRepository>();
+            Bind<IRepository<Blog>>().To<Repository<Blog>>();
         }
     }
 }
