@@ -6,8 +6,7 @@ namespace MultiLayer.Infrasturcture.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
-            ContextKey = "MultiLayer.Infrasturcture.MultilayerDbContext";
+            AutomaticMigrationsEnabled = false;            
         }
 
         protected override void Seed(MultilayerDbContext context)

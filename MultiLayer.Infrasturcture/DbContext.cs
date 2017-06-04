@@ -1,15 +1,17 @@
-﻿using MultiLayer.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using MultiLayer.Domain;
+using MultiLayer.Domain.Entities;
 
 namespace MultiLayer.Infrasturcture
 {
-    public class MultilayerDbContext : DbContext
+    public class MultilayerDbContext : IdentityDbContext<ApplicationUser>, IDbContext
     {
+        public MultilayerDbContext()
+           : base("DefaultConnection", throwIfV1Schema: false)
+        {
+        }
+
         public DbSet<Post> Posts { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Author> Authors { get; set; }
